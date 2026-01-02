@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
@@ -6,8 +7,7 @@ const Navbar = () => {
         <nav className={styles.navbar}>
             <div className={styles.container}>
                 <Link href="/" className={styles.logo}>
-                    <span className={styles.logoSymbol}>P</span>
-                    PRIME TOOLINGS
+                    <Image src="/images/logo.png" alt="Prime Toolings" width={180} height={50} style={{ objectFit: 'contain' }} priority />
                 </Link>
 
                 <div className={styles.navLinks}>

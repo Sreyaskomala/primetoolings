@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./page.module.css";
 import { Metadata } from "next";
 
@@ -30,6 +31,15 @@ export default function InternshipPage() {
                     </div>
                 </div>
             </header>
+
+            <div style={{ position: 'relative', width: '100%', height: '500px', marginBottom: '6rem', borderRadius: '12px', overflow: 'hidden' }}>
+                <Image
+                    src="/images/team-photo.jpg"
+                    alt="Prime Toolings Team with Students"
+                    fill
+                    style={{ objectFit: "cover" }}
+                />
+            </div>
 
             {/* Curriculum */}
             <section className={styles.section}>

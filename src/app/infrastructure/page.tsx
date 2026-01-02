@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
     title: 'Infrastructure | Prime Toolings',
@@ -21,7 +22,9 @@ export default function InfrastructurePage() {
                 <h2 className={styles.sectionTitle}>Manufacturing Facility</h2>
                 <div className={styles.gallery}>
                     <div className={styles.galleryItem}>
-                        <div className={styles.imagePlaceholder}>[Factory Floor Overview]</div>
+                        <div style={{ position: 'relative', width: '100%', height: '250px', backgroundColor: '#f3f4f6' }}>
+                            <Image src="/images/hardware-setup.jpg" alt="Manufacturing Facility Setup" fill style={{ objectFit: 'cover' }} />
+                        </div>
                         <div className={styles.caption}>
                             <h3>Main Assembly Hall</h3>
                             <p>Dedicated zones for engine integration and precision assembly.</p>
@@ -49,7 +52,9 @@ export default function InfrastructurePage() {
                 <h2 className={styles.sectionTitle}>Test & Calibration</h2>
                 <div className={styles.gallery}>
                     <div className={styles.galleryItem}>
-                        <div className={styles.imagePlaceholder}>[Engine Test Stand]</div>
+                        <div style={{ position: 'relative', width: '100%', height: '250px', backgroundColor: '#f3f4f6' }}>
+                            <Image src="/images/fire-test-2.jpg" alt="Engine Test Stand" fill style={{ objectFit: 'cover' }} />
+                        </div>
                         <div className={styles.caption}>
                             <h3>Static Test Firing Stand</h3>
                             <p>Reinforced bunkers for safe engine firing tests.</p>
@@ -70,7 +75,9 @@ export default function InfrastructurePage() {
                 <h2 className={styles.sectionTitle}>Internship in Action</h2>
                 <div className={styles.gallery}>
                     <div className={styles.galleryItem}>
-                        <div className={styles.imagePlaceholder}>[Student Team Working]</div>
+                        <div style={{ position: 'relative', width: '100%', height: '250px', backgroundColor: '#f3f4f6' }}>
+                            <Image src="/images/team-photo.jpg" alt="Student Team Working" fill style={{ objectFit: 'cover' }} />
+                        </div>
                         <div className={styles.caption}>
                             <h3>Hands-on Assembly</h3>
                             <p>Students assembling a 1kN propulsion system.</p>

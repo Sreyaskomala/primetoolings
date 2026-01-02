@@ -14,15 +14,15 @@
   --text-muted: #9CA3AF;
   /* Gray 400 */
 
-  --accent-primary: #0F52BA;
-  /* Aerospace Blue (Sapphire) */
-  --accent-secondary: #DC2626;
-  /* Alert Red (Limited) */
+  --accent-primary: #F53D10;
+  /* Logo Orange-Red */
+  --accent-secondary: #0F52BA;
+  /* Aerospace Blue (Secondary) */
 
   --border-subtle: #E5E7EB;
   /* Gray 200 */
-  --border-focus: #2563EB;
-  /* Blue 600 */
+  --border-focus: #F53D10;
+  /* Match primary accent */
 
   /* Typography Variables */
   --font-heading: var(--font-space);

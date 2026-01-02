@@ -10,7 +10,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: radial-gradient(circle at center, #1f2937 0%, #111827 100%);
+    background: linear-gradient(rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.9)), url('/images/flame-closeup.jpg');
+    background-size: cover;
+    background-position: center;
     color: #fff;
     padding: 0 1rem;
 }

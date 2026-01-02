@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -7,7 +8,9 @@ const Footer = () => {
             <div className={styles.container}>
                 <div className={styles.top}>
                     <div className={styles.brand}>
-                        <h3>PRIME TOOLINGS</h3>
+                        <div style={{ position: 'relative', width: '200px', height: '60px', marginBottom: '1rem' }}>
+                            <Image src="/images/logo.png" alt="Prime Toolings Logo" fill style={{ objectFit: 'contain', objectPosition: 'left' }} />
+                        </div>
                         <p>Advancing aerospace propulsion through precision engineering and defense-grade manufacturing.</p>
                     </div>
 
