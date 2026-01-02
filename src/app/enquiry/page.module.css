@@ -1,0 +1,140 @@
+/* web/src/app/enquiry/page.module.css */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid var(--border-subtle);
+    padding-bottom: 1rem;
+}
+
+.tabButton {
+    background: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: var(--text-secondary);
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+}
+
+.tabButton:hover {
+    color: var(--accent-primary);
+    background: var(--bg-secondary);
+}
+
+.activeTab {
+    color: white !important;
+    background: var(--accent-primary) !important;
+    font-weight: 600;
+}
+
+.formContainer {
+    background: white;
+    padding: 4rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.formGroup {
+    margin-bottom: 2rem;
+}
+
+.label {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.input,
+.select,
+.textarea {
+    width: 100%;
+    padding: 0.9rem;
+    background: #F9FAFB;
+    /* Very light gray */
+    border: 1px solid #D1D5DB;
+    /* Gray 300 */
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(15, 82, 186, 0.1);
+    background: white;
+}
+
+.textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 1rem;
+    background: var(--accent-primary);
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    margin-top: 1rem;
+}
+
+.submitButton:hover {
+    background: #0B3D91;
+    box-shadow: 0 4px 6px rgba(15, 82, 186, 0.2);
+}
+
+.checkboxGroup {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    cursor: pointer;
+}

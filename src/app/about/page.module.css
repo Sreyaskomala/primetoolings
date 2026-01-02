@@ -1,0 +1,113 @@
+/* web/src/app/about/page.module.css */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 6rem 2rem;
+}
+
+.header {
+    margin-bottom: 6rem;
+    max-width: 900px;
+}
+
+.title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1.25rem;
+    line-height: 1.6;
+    border-left: 3px solid var(--accent-primary);
+    padding-left: 1.5rem;
+}
+
+.section {
+    margin-bottom: 8rem;
+}
+
+.visionGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.visionCard {
+    background: var(--bg-secondary);
+    /* Light Gray */
+    padding: 3rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-subtle);
+}
+
+.visionTitle {
+    font-size: 0.9rem;
+    color: var(--accent-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: var(--font-body);
+}
+
+.visionText {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.infraDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.infraText h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.infraList {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.infraList li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.infraList li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background: var(--accent-primary);
+    border-radius: 50%;
+}
+
+.placeholder {
+    height: 400px;
+    background: #E5E7EB;
+    /* Gray 200 */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    border: 1px solid var(--border-subtle);
+}
